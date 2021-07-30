@@ -1,0 +1,82 @@
+/*
+@Burak Usluer
+.main-menu .navigation > li > ul
+	width:230px;=> max-content
+*/
+.main-menu .navigation > li > ul{
+    position:absolute;
+    left:-30px;
+    top:100%;
+    width:max-content!important;
+    z-index:100;
+    display:none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 900ms ease;
+    -moz-transition: all 900ms ease;
+    -webkit-transition: all 900ms ease;
+    -ms-transition: all 900ms ease;
+    -o-transition: all 900ms ease;
+    padding:20px 15px;
+    border-radius:10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.10);
+}
+
+
+/*
+@Burak Usluer
+#17/12/2020
+font-family:FontAwesome -> font-family: "Font Awesome 5 Free";
+*/
+.list-link li a:before{
+    position:absolute;
+    content: "\f101";
+    left:0;
+    font-weight: 900;
+    top:0;
+    line-height:1em;
+    font-family: "Font Awesome 5 Free"!important;
+}
+
+/*
+@Burak Usluer
+@17/12/2020
+font-family:"FontAwesome"=>"Font Awesome 5 Free"
+font-weight:normal => bold
+*/
+.sidebar .service-list li a:before{
+    content: "\f101";
+    position:absolute;
+    right:20px;
+    top:16px;
+    display:block;
+    line-height:26px;
+    font-size:20px;
+    font-weight:bold!important;
+    text-align:center;
+    z-index:5;
+    font-family: "Font Awesome 5 Free"!important;
+}
+
+.main-header .nav-outer{
+    background-color: #aaadaf;
+}
+/*
+E.S.
+*/
+@media screen and (max-width: 760px) {
+    .logo-box {
+        width: 200px!important;
+    }
+    .displayNone2{
+        width: 100px!important;
+    }
+}
+@media screen and (min-width: 760px) {
+    .displayNone {
+        display: none !important;
+    }
+
+
+}
